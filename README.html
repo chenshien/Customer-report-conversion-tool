@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>客户报表转换工具 - 用户操作说明</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #1e88e5;
+            border-bottom: 2px solid #1e88e5;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0d47a1;
+            margin-top: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #1565c0;
+            margin-top: 20px;
+        }
+        ol, ul {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .note {
+            background-color: #e3f2fd;
+            border-left: 4px solid #1e88e5;
+            padding: 10px 15px;
+            margin: 15px 0;
+        }
+        .qa {
+            margin-bottom: 20px;
+        }
+        .qa h4 {
+            color: #1565c0;
+            margin-bottom: 5px;
+        }
+        .qa p {
+            margin-top: 5px;
+            margin-left: 15px;
+        }
+        footer {
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>客户报表转换工具 - 用户操作说明</h1>
+    
+    <h2>软件简介</h2>
+    <p>客户报表转换工具是一款专为财务人员设计的Excel报表处理软件，能够自动识别并提取资产负债表、现金流量表和损益表中的关键数据，并按照标准格式输出。本工具特别适合处理不同格式的财务报表，将其转换为统一格式，便于后续分析和比较。</p>
+    
+    <h2>操作流程</h2>
+    
+    <h3>1. 启动软件</h3>
+    <p>双击程序图标启动软件，您将看到主界面，包含文件选择、表格选择、期间选择和数据处理等功能区域。</p>
+    
+    <h3>2. 导入Excel文件</h3>
+    <ol>
+        <li>点击界面上的"选择文件"按钮</li>
+        <li>在弹出的文件选择对话框中，选择需要处理的Excel文件（支持.xlsx和.xls格式）</li>
+        <li>文件加载成功后，软件会自动读取文件中的工作表名称</li>
+    </ol>
+    
+    <h3>3. 选择工作表</h3>
+    <ol>
+        <li>在"选择工作表"区域，从下拉列表中选择对应的工作表：
+            <ul>
+                <li>资产负债表</li>
+                <li>现金流量表</li>
+                <li>损益表</li>
+            </ul>
+        </li>
+        <li>确保三个工作表都已选择</li>
+        <li>点击"确认选择并分析期间"按钮</li>
+    </ol>
+    
+    <div class="note">
+        <strong>注意</strong>：分析期间可能需要一些时间，特别是对于大型Excel文件。软件会显示进度窗口，请耐心等待。
+    </div>
+    
+    <h3>4. 选择期间列</h3>
+    <ol>
+        <li>软件会自动分析并显示每个工作表中的期间列</li>
+        <li>为每个工作表选择对应的期间：
+            <ul>
+                <li>本期：当前报告期的数据列</li>
+                <li>上期：上一报告期的数据列</li>
+                <li>年初：年初数据列（如适用）</li>
+            </ul>
+        </li>
+        <li>如果某些期间不适用，可以不选择</li>
+    </ol>
+    
+    <h3>5. 处理数据</h3>
+    <ol>
+        <li>完成期间选择后，点击"处理数据"按钮</li>
+        <li>软件会自动提取和处理数据，并在日志区域显示处理进度</li>
+        <li>处理完成后，"导出数据"按钮将被启用</li>
+    </ol>
+    
+    <h3>6. 导出数据</h3>
+    <ol>
+        <li>点击"导出数据"按钮</li>
+        <li>在弹出的对话框中选择保存位置和文件名</li>
+        <li>点击"保存"完成导出</li>
+        <li>导出成功后，软件会显示成功消息</li>
+    </ol>
+    
+    <h2>特殊功能说明</h2>
+    
+    <h3>公式单元格处理</h3>
+    <p>本软件能够正确读取和处理包含公式的单元格，确保导出数据的准确性。即使原表中的单元格包含复杂公式，软件也能获取其计算结果。</p>
+    
+    <h3>自动预处理</h3>
+    <p>软件会自动识别并删除不必要的列（如TB、Trial Balance等辅助列），简化报表结构。</p>
+    
+    <h3>日志记录</h3>
+    <p>界面底部的日志区域会实时显示处理过程中的信息、警告和错误，帮助您了解处理状态和可能的问题。</p>
+    
+    <h2>常见问题解答</h2>
+    
+    <div class="qa">
+        <h4>Q: 为什么软件在处理大文件时看起来没有响应？</h4>
+        <p>A: 处理大型Excel文件可能需要一些时间。软件会显示进度窗口，请耐心等待。如果进度窗口长时间没有变化，可以尝试重启软件。</p>
+    </div>
+    
+    <div class="qa">
+        <h4>Q: 软件无法识别我的报表格式怎么办？</h4>
+        <p>A: 本软件支持多种常见的报表格式，但如果遇到特殊格式，可能需要手动调整原始Excel文件的结构，确保关键项目名称清晰可见。</p>
+    </div>
+    
+    <div class="qa">
+        <h4>Q: 导出的数据中某些项目为0，但原表中有数据？</h4>
+        <p>A: 请检查原表中的数据格式。如果是文本格式或特殊格式，软件可能无法正确识别。建议将原表中的数据转换为标准数字格式。</p>
+    </div>
+    
+    <div class="qa">
+        <h4>Q: 如何处理多期间的报表？</h4>
+        <p>A: 软件支持同时处理本期、上期和年初三个期间的数据。如果您的报表包含更多期间，建议分批处理。</p>
+    </div>
+    
+    <h2>技术支持</h2>
+    <p>如遇到使用问题，请联系风险管理部技术支持团队，或发送详细问题描述和截图至支持邮箱。</p>
+    
+    <footer>
+        <p>感谢您使用客户报表转换工具！我们致力于不断改进产品，为您提供更好的使用体验。</p>
+    </footer>
+</body>
+</html> 
