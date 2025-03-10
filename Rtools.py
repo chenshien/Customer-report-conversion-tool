@@ -18,7 +18,7 @@ class ReportConverter:
             sys.exit(1)
             
         self.root = tk.Tk()
-        self.root.title("报表转换工具 @风险管理部 2025")
+        self.root.title("报表转换工具 @ 2025")
         # 设置固定窗口大小
         self.root.geometry("1024x768")
         self.root.resizable(False, False)
@@ -55,7 +55,7 @@ class ReportConverter:
         
         # 显示欢迎信息
         self.log_message("=" * 50, "INFO")
-        self.log_message("报表转换工具 @风险管理部 2025", "INFO")
+        self.log_message("报表转换工具 @ 2025", "INFO")
         self.log_message("=" * 50, "INFO")
         self.log_message("准备就绪，请选择Excel文件开始处理...", "INFO")
     
